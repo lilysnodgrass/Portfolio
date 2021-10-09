@@ -1,7 +1,5 @@
-@charset "UTF-8";
-/*!
-* Start Bootstrap - Grayscale v7.0.3 (https://startbootstrap.com/theme/grayscale)
-* Copyright 2013-2021 Start Bootstrap
+/*! Start Bootstrap - Grayscale v7.0.3 (https://startbootstrap.com/theme/grayscale)
+* Copyright Lily Snodgrass 2021 Start Bootstrap
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-grayscale/blob/master/LICENSE)
 */
 /*!
@@ -106,38 +104,24 @@ hr:not([size]) {
 
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 0.5rem;
   font-weight: 500;
-  line-height: 1;
+  line-height: 1.2;
 }
 
 h1, .h1 {
-  font-family: avenir next, Arial, Helvetica, sans-serif;
-  font-size: calc(1.375rem + 1.5vw);
-  color: white;
-}
-.h1 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: var(--bs-font-sans-serif);
-  color: white;
+  font-size: calc(1rem + 1vw);
+  display: flex;
 }
 @media (min-width: 1200px) {
   h1, .h1 {
     font-size: 2.5rem;
-    justify-content: center;
   }
 }
 
 h2, .h2 {
   font-size: calc(1.325rem + 0.9vw);
 }
-
-.uppercase {
-  text-transform: uppercase;
-  kerning: .5rem;
-  font-family: le havre layers;
-}
-
 @media (min-width: 1200px) {
   h2, .h2 {
     font-size: 2rem;
@@ -233,7 +217,7 @@ small, .small {
 
 mark, .mark {
   padding: 0.2em;
- /*  background-color: #fcf8e3 */;
+  background-color: #fcf8e3;
 }
 
 sub,
@@ -652,8 +636,8 @@ progress {
 .container-md,
 .container-sm {
   width: 100%;
-  padding-right: var(--bs-gutter-x, 0rem);
-  padding-left: var(--bs-gutter-x, 0rem);
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
   margin-right: auto;
   margin-left: auto;
 }
@@ -891,7 +875,7 @@ progress {
 
 .g-4,
 .gx-4 {
-  --bs-gutter-x: 1rem;
+  --bs-gutter-x: 1.5rem;
 }
 
 .g-4,
@@ -1418,7 +1402,6 @@ progress {
   .col-lg-8 {
     flex: 0 0 auto;
     width: 66.66666667%;
-    margin-top: 40px;
   }
 
   .col-lg-9 {
@@ -2252,8 +2235,8 @@ progress {
   opacity: 1;
 }
 .form-control:disabled, .form-control[readonly] {
-/*   background-color: #e9ecef;
- */  opacity: 1;
+  background-color: #e9ecef;
+  opacity: 1;
 }
 .form-control::-webkit-file-upload-button {
   padding: 0.375rem 0.75rem;
@@ -2261,8 +2244,8 @@ progress {
   -webkit-margin-end: 0.75rem;
           margin-inline-end: 0.75rem;
   color: #212529;
-/*   background-color: #e9ecef;
- */  pointer-events: none;
+  background-color: #e9ecef;
+  pointer-events: none;
   border-color: inherit;
   border-style: solid;
   border-width: 0;
@@ -4061,7 +4044,6 @@ textarea.form-control-lg {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
-  background-color: black;
 }
 
 .nav-link {
@@ -4153,14 +4135,13 @@ textarea.form-control-lg {
 }
 
 .navbar {
-  position: sticky;
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding-top: 0.3rem;
-  padding-bottom: 0.3rem;
-  background-color: black;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 .navbar > .container,
 .navbar > .container-fluid,
@@ -4641,7 +4622,7 @@ textarea.form-control-lg {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  border: 0px solid rgba(0, 0, 0, 0.125);
+  border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
 }
 .card > hr {
@@ -4692,8 +4673,8 @@ textarea.form-control-lg {
 .card-header {
   padding: 0.5rem 1rem;
   margin-bottom: 0;
-/*   background-color: rgba(0, 0, 0, 0.03);
- */  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  background-color: rgba(0, 0, 0, 0.03);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
 .card-header:first-child {
   border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
@@ -4701,8 +4682,8 @@ textarea.form-control-lg {
 
 .card-footer {
   padding: 0.5rem 1rem;
-/*   background-color: rgba(0, 0, 0, 0.03);
-     border-top: 0px solid rgba(0, 0, 0, 0.125);*/
+  background-color: rgba(0, 0, 0, 0.03);
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
 }
 .card-footer:last-child {
   border-radius: 0 0 calc(0.25rem - 1px) calc(0.25rem - 1px);
@@ -5755,7 +5736,6 @@ textarea.form-control-lg {
 
 .modal-footer {
   display: flex;
-  width: 100%;
   flex-wrap: wrap;
   flex-shrink: 0;
   align-items: center;
@@ -6145,8 +6125,8 @@ textarea.form-control-lg {
   padding: 0.5rem 1rem;
   margin-bottom: 0;
   font-size: 1rem;
-/*   background-color: #f0f0f0;
- */  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: #f0f0f0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   border-top-left-radius: calc(0.3rem - 1px);
   border-top-right-radius: calc(0.3rem - 1px);
 }
@@ -7170,8 +7150,7 @@ textarea.form-control-lg {
 }
 
 .h-100 {
-/*   height: 100% !important;*/  
-height: 4rem;
+  height: 100% !important;
 }
 
 .h-auto {
@@ -7445,9 +7424,8 @@ height: 4rem;
 }
 
 .mx-auto {
-/*   margin-right: auto !important;
+  margin-right: auto !important;
   margin-left: auto !important;
- */  justify-content: center !important;
 }
 
 .my-0 {
@@ -7642,8 +7620,8 @@ height: 4rem;
 }
 
 .px-4 {
-  padding-right: 0rem !important;
-  padding-left: 0rem !important;
+  padding-right: 1.5rem !important;
+  padding-left: 1.5rem !important;
 }
 
 .px-5 {
@@ -7942,7 +7920,6 @@ height: 4rem;
 
 .text-black {
   --bs-text-opacity: 1;
-  size: 14px;
   color: rgba(var(--bs-black-rgb), var(--bs-text-opacity)) !important;
 }
 
@@ -7963,7 +7940,6 @@ height: 4rem;
 
 .text-black-50 {
   --bs-text-opacity: 1;
-  size: 14px;
   color: rgba(0, 0, 0, 0.5) !important;
 }
 
@@ -8035,7 +8011,6 @@ height: 4rem;
 
 .bg-black {
   --bs-bg-opacity: 1;
-  width: 100%;
   background-color: rgba(var(--bs-black-rgb), var(--bs-bg-opacity)) !important;
 }
 
@@ -9973,8 +9948,8 @@ height: 4rem;
   }
 
   .px-lg-5 {
-    padding-right: 0rem !important;
-    padding-left: 0rem !important;
+    padding-right: 3rem !important;
+    padding-left: 3rem !important;
   }
 
   .py-lg-0 {
@@ -11485,13 +11460,13 @@ body {
 
 #mainNav {
   min-height: 3.5rem;
-  background-color: white;
+  background-color: #fff;
 }
 #mainNav .navbar-toggler {
   font-size: 80%;
   padding: 0.75rem;
-  color: darkgrey;
-  border: 0px solid #64a19d;
+  color: #64a19d;
+  border: 1px solid #64a19d;
 }
 #mainNav .navbar-toggler:focus {
   outline: none;
@@ -11515,7 +11490,7 @@ body {
     padding-top: 0;
     padding-bottom: 0;
     border-bottom: none;
-    background-color: black;
+    background-color: transparent;
     transition: background-color 0.3s ease-in-out;
   }
   #mainNav .navbar-brand {
@@ -11568,64 +11543,55 @@ body {
 }
 
 .masthead {
-/*   position: relative; */  
+  position: relative;
   width: 100%;
-  background-color: black;
-  justify-content: center;
+  height: auto;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/bg-masthead.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
 }
-
 .masthead h1, .masthead .h1 {
   font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
   letter-spacing: 0.8rem;
-  background-color: black;
-  justify-content: center;
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
 }
-
 .masthead h2, .masthead .h2 {
   max-width: 20rem;
   font-size: 1rem;
-  justify-content: center;
-  align-content: center;
-  place-content: center;
-  position: center;
-  background-color: black;
-
 }
 @media (min-width: 768px) {
   .masthead h1, .masthead .h1 {
-    font-size: 2rem;
-    line-height: 2rem;
-    position: center;
-    background-color: black;
+    font-size: 4rem;
+    line-height: 4rem;
   }
 }
 @media (min-width: 992px) {
   .masthead {
-    height: 100px;
-    padding-top: 60px;
-    margin-top: 0px;
-    background-color: black;
-    justify-content: center;
+    height: 100vh;
+    padding: 0;
   }
   .masthead h1, .masthead .h1 {
-    font-size: 3rem;
-    line-height: 1.5rem;
+    font-size: 6.5rem;
+    line-height: 6.5rem;
     letter-spacing: 0.8rem;
-    background-color: black;
-    justify-content: center;
   }
   .masthead h2, .masthead .h2 {
     max-width: 30rem;
     font-size: 1.25rem;
-    background-color: black;
   }
 }
 
 .about-section {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 10rem;
   background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
 }
 .about-section p {
@@ -11633,8 +11599,7 @@ body {
 }
 
 .projects-section {
-  padding: 0rem;
-  margin-top: 80px;
+  padding: 10rem 0;
 }
 .projects-section .featured-text {
   padding: 2rem;
@@ -11642,6 +11607,8 @@ body {
 @media (min-width: 992px) {
   .projects-section .featured-text {
     padding: 0 0 0 2rem;
+    border-left: 0.5rem solid #64a19d;
+  }
 }
 .projects-section .project-text {
   padding: 3rem;
@@ -11652,19 +11619,22 @@ body {
     padding: 5rem;
   }
   .projects-section .project-text hr {
+    border-color: #64a19d;
+    border-width: 0.25rem;
     width: 30%;
   }
 }
 
 .signup-section {
-  padding: 5rem 0;
+  padding: 10rem 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url("../assets/img/bg-signup.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
 }
 .signup-section .form-signup input {
-/*   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important; */
+  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
   padding: 1.25rem 2rem;
   height: auto;
   font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -11678,22 +11648,14 @@ body {
   padding-top: 5rem;
 }
 .contact-section .card {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
   border: 0;
-  margin-left: 10rem;
-  margin-right: 20rem;
-/*   border-bottom: 0.25rem solid #64a19d;
- */
+  border-bottom: 0.25rem solid #64a19d;
 }
-
 .contact-section .card h4, .contact-section .card .h4 {
   font-size: 0.8rem;
   font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   text-transform: uppercase;
   letter-spacing: 0.15rem;
-  margin-bottom: 2rem;
 }
 .contact-section .card hr {
   border-color: #64a19d;
@@ -11707,8 +11669,8 @@ body {
   text-align: center;
   height: 3rem;
   width: 3rem;
-/*   background: rgba(255, 255, 255, 0.1);
- */  border-radius: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 100%;
   line-height: 3rem;
   color: rgba(255, 255, 255, 0.3);
 }
@@ -11720,6 +11682,5 @@ body {
 }
 
 .footer {
-  padding: 4rem;
-  text-align: center;
-}}
+  padding: 5rem 0;
+}
