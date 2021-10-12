@@ -79,6 +79,7 @@
   }
 }
 
+}
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
@@ -177,8 +178,8 @@ p {
 
 abbr[title],
 abbr[data-bs-original-title] {
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  -webkit-text-decoration: none;
+          text-decoration: none;
   cursor: help;
   -webkit-text-decoration-skip-ink: none;
           text-decoration-skip-ink: none;
@@ -254,7 +255,7 @@ sup {
 
 a {
   color: #64a19d;
-  text-decoration: underline;
+  text-decoration: none;
 }
 a:hover {
   color: #50817e;
@@ -1418,7 +1419,9 @@ progress {
   .col-lg-8 {
     flex: 0 0 auto;
     width: 66.66666667%;
-    margin-top: 40px;
+    margin-top: 80px;
+    margin-left: 40px;
+    margin-right: 40px;
   }
 
   .col-lg-9 {
@@ -3595,7 +3598,7 @@ textarea.form-control-lg {
 .btn-link {
   font-weight: 400;
   color: #64a19d;
-  text-decoration: underline;
+  text-decoration: none;
 }
 .btn-link:hover {
   color: #50817e;
@@ -7946,9 +7949,23 @@ height: 4rem;
   color: rgba(var(--bs-black-rgb), var(--bs-text-opacity)) !important;
 }
 
+.text-full-black {
+  color: black !important;
+}
+
 .text-white {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
+}
+
+.text-white-basic {
+  color: white;
+  text-align: left;
+}
+
+.text-black-basic {
+  color: black;
+  text-align: left;
 }
 
 .text-body {
@@ -7970,7 +7987,11 @@ height: 4rem;
 .text-white-50 {
   --bs-text-opacity: 1;
   color: rgba(255, 255, 255, 0.5) !important;
+  padding-left: 40px
+  padding-right: 40px;
 }
+
+
 
 .text-reset {
   --bs-text-opacity: 1;
@@ -11626,6 +11647,7 @@ body {
 .about-section {
   padding-top: 5rem;
   padding-bottom: 5rem;
+
   background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
 }
 .about-section p {
