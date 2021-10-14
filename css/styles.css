@@ -455,14 +455,14 @@ legend + * {
   -webkit-appearance: textfield;
 }
 
-/* rtl:raw:
+rtl:raw:
 [type="tel"],
 [type="url"],
 [type="email"],
 [type="number"] {
   direction: ltr;
 }
-*/
+
 ::-webkit-search-decoration {
   -webkit-appearance: none;
 }
@@ -618,6 +618,11 @@ progress {
 
 .img-fluid {
   max-width: 100%;
+  height: auto;
+}
+
+.img-small {
+  max-width: 50%;
   height: auto;
 }
 
@@ -1419,8 +1424,8 @@ progress {
     flex: 0 0 auto;
     width: 66.66666667%;
     margin-top: 80px;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
   }
 
   .col-lg-9 {
@@ -11538,12 +11543,12 @@ body {
   }
   #mainNav .navbar-brand {
     padding: 0.5rem 0;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255);
   }
   #mainNav .nav-link {
     transition: none;
     padding: 2rem 1.5rem;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgb(255, 255, 255);
   }
   #mainNav .nav-link:hover {
     color: rgba(255, 255, 255, 0.75);
@@ -11563,11 +11568,9 @@ body {
     border-bottom: 0.25rem solid transparent;
   }
   #mainNav.navbar-shrink .nav-link:hover {
-    color: #64a19d;
-  }
-  #mainNav.navbar-shrink .nav-link:active {
     color: #467370;
   }
+ 
   #mainNav.navbar-shrink .nav-link.active {
     color: #64a19d;
     outline: none;
@@ -11648,7 +11651,7 @@ body {
   background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
 }
 .about-section p {
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 
 .projects-section {
