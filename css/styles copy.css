@@ -612,6 +612,12 @@ progress {
   align-content: left;
 }
 
+.img-med {
+  max-width: 75%;
+  height: auto;
+  align-content: left;
+}
+
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;
