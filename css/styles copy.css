@@ -237,12 +237,21 @@ sup {
   top: -0.5em;
 }
 
+.text-blue {
+  color: rgb(121, 167, 228);
+}
+
+a.text-blue {
+  color: rgb(151, 206, 231);
+  text-decoration: underline;
+}
+
 a {
-  color: #666666;
+  color: #8baace;
   text-decoration: none;
 }
 a:hover {
-  color: #8f8f8f;
+  color: #758299;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -6987,6 +6996,18 @@ textarea.form-control-lg {
 
 .bottom-margin {
   margin-bottom: 8rem;
+}
+
+.bottom-margin-half {
+  margin-bottom: 4rem;
+}
+
+.bottom-margin-3 {
+  margin-bottom: 3rem;
+}
+
+.bottom-margin-2 {
+  margin-bottom: 2rem;
 }
 
 .start-0 {
